@@ -7,7 +7,7 @@ This is a base chat library for FAQ bots.
 Make sure you have the access rights to this repository
 
 ```bash
-yarn add git@github.com:oronetworks/react-faq-base.git
+yarn add https://github.com/oronetworks/react-faq-base.git
 ```
 
 ## Usage
