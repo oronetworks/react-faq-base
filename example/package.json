@@ -8,7 +8,7 @@
     "prop-types": "^15.6.2",
     "react": "link:../node_modules/react",
     "react-dom": "^16.4.1",
-    "react-faq-base": "https://github.com/oronetworks/react-faq-base.git",
+    "react-faq-base": "link:..",
     "react-scripts": "^1.1.4"
   },
   "scripts": {

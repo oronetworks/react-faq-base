@@ -5587,9 +5587,9 @@ react-error-overlay@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
 
-"react-faq-base@ssh://git@bitbucket-personal:kushal_siddesh/piir-faq-bot.git":
-  version "1.0.0"
-  resolved "ssh://git@bitbucket-personal:kushal_siddesh/piir-faq-bot.git#ff4926b1a926792a8e0cf6f122b07c822df43ab3"
+"react-faq-base@link:..":
+  version "0.0.0"
+  uid ""
 
 react-is@^16.8.1:
   version "16.12.0"
