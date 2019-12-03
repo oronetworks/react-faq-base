@@ -24,7 +24,7 @@ class Example extends Component {
     return (
       <Chat
         base_url="http://my-backend-url"
-        initial_messages="['Hi, I am FAQ bot','Powered by AI']"
+        initial_messages={['Hi, I am FAQ bot','Powered by AI']}
         bot_name="Bot Foo"
         primary_color="#fff"
       />
