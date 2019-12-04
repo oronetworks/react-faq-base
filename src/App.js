@@ -4,7 +4,7 @@ import ChatBody from "./components/ChatBody";
 import ChatHeader from "./components/ChatHeader";
 import ChatFooter from "./components/ChatFooter";
 import Toggle from "./components/Toggle";
-import { generateId, getLocaltime } from "./helper";
+import { generateId, getLocaltime, urlMatch } from "./helper";
 import { Provider } from "./context";
 import * as constants from "./constants";
 import "./scss/widget.scss";
@@ -166,8 +166,9 @@ class App extends React.Component {
   };
 
   render() {
-    let { open, data, count } = this.state;
-    const { wrapperStyle } = this.props;
+    const { open, data, count } = this.state;
+    const { wrapperStyle, exclude } = this.props;
+    const rootStyle = urlMatch(exclude) ? { display: "none" } : {};
 
     return data.length > 0 ? (
       <Provider
@@ -177,7 +178,7 @@ class App extends React.Component {
           windowTrigger: this.windowTrigger
         }}
       >
-        <div id="piri-ai" style={wrapperStyle}>
+        <div id="piri-ai" style={{ ...rootStyle, ...wrapperStyle }}>
           <div
             className="window"
             style={{
