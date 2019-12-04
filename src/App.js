@@ -4,7 +4,7 @@ import ChatBody from "./components/ChatBody";
 import ChatHeader from "./components/ChatHeader";
 import ChatFooter from "./components/ChatFooter";
 import Toggle from "./components/Toggle";
-import { generateId, getLocaltime, urlMatch } from "./helper";
+import { generateId, getLocaltime, urlMatch, replaceUrl } from "./helper";
 import { Provider } from "./context";
 import * as constants from "./constants";
 import "./scss/widget.scss";
@@ -91,7 +91,11 @@ class App extends React.Component {
             let apiResponse = response.data;
             data[index].sending = false;
             apiResponse.forEach(({ text }) => {
-              data.push({ message: text, author: 0, id: generateId() });
+              data.push({
+                message: replaceUrl(text),
+                author: 0,
+                id: generateId()
+              });
             });
             this.setState({
               data,
@@ -140,7 +144,11 @@ class App extends React.Component {
             let apiResponse = response.data;
             data[index].sending = false;
             apiResponse.forEach(({ text }) => {
-              data.push({ message: text, author: 0, id: generateId() });
+              data.push({
+                message: replaceUrl(text),
+                author: 0,
+                id: generateId()
+              });
             });
             this.setState({
               data,

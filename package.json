@@ -61,5 +61,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "html-to-react": "^1.4.2"
+  }
 }
