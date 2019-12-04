@@ -10,7 +10,7 @@ export default props => {
       {({ bot_name, bot_src, primary_color }) => (
         <React.Fragment>
           {(next != 0 || (next == 0 && nextOptions)) && (
-            <img src={bot_src} style={{ width: 25, height: 25 }} />
+            <img src={bot_src} style={{ width: 25 }} />
           )}
           <div
             style={{
