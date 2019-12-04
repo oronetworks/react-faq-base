@@ -167,6 +167,7 @@ class App extends React.Component {
 
   render() {
     let { open, data, count } = this.state;
+    const { wrapperStyle } = this.props;
 
     return data.length > 0 ? (
       <Provider
@@ -176,7 +177,7 @@ class App extends React.Component {
           windowTrigger: this.windowTrigger
         }}
       >
-        <div id="piri-ai">
+        <div id="piri-ai" style={wrapperStyle}>
           <div
             className="window"
             style={{
