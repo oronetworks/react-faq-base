@@ -39,7 +39,7 @@ export default props => {
     <Consumer>
       {({primary_color, bot_inverted, windowTrigger}) => (
         <div
-          className={`${count > 0 && isAnimate ? 'box bounce toggle' : 'toggle'}`}
+          className={`${count > 0 && isAnimate ? 'box bounce-1 toggle' : 'toggle'}`}
           onClick={windowTrigger}
           style={{backgroundColor: primary_color}}
         >

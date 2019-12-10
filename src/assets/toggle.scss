@@ -4,19 +4,16 @@
   animation-iteration-count: infinite;
   transform-origin: bottom;
 }
-.bounce {
-  animation-name: bounce;
+.bounce-1 {
+  animation-name: bounce-1;
   animation-timing-function: ease;
 }
-@keyframes bounce {
+@keyframes bounce-1 {
   0% {
     transform: translateY(0);
   }
-  10% {
-    transform: translateY(-50px);
-  }
   30% {
-    transform: translateY(0);
+    transform: translateY(-50px);
   }
   50% {
     transform: translateY(0);
@@ -25,3 +22,4 @@
     transform: translateY(0);
   }
 }
+
